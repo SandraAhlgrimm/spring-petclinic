@@ -9468,6 +9468,11 @@ strong {
   -webkit-transition: opacity 0.12s ease-in-out;
   -o-transition: opacity 0.12s ease-in-out; }
 
+.navbar a.navbar-brand:focus-visible,
+.navbar .navbar-toggler:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px; }
+
 .navbar a:hover.navbar-brand span {
   opacity: 1; }
 
