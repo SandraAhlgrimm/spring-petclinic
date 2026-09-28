@@ -19,10 +19,9 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
     <div class="container-fluid">
-      <a class="navbar-brand" th:href="@{/}" th:attr="aria-label=#{nav.home}"><span aria-hidden="true"></span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
-        aria-controls="main-navbar" aria-expanded="false" th:attr="aria-label=#{nav.toggle}">
-        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      <a class="navbar-brand" th:href="@{/}"><span></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="main-navbar" style>
 
@@ -30,7 +29,7 @@
 
           <li th:fragment="menuItem (link,active,title,glyph,text)" th:class="nav-item">
             <a th:class="${active==menu ? 'nav-link active' : 'nav-link'}" th:href="@{__${link}__}" th:title="${title}">
-              <span th:class="'fa fa-'+${glyph}" class="fa fa-home" aria-hidden="true"></span>
+              <span th:class="'fa fa-'+${glyph}" class="fa fa-home"></span>
               <span th:text="${text}">Template</span>
             </a>
           </li>
